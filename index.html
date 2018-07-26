@@ -7,15 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="poetry.html">Poetry</a>
+    </nav>
+    
     <header>
         <img src="img/stmth.jpg">
         <h1>Systematic Age</h1>
         <h3>Urban Ukrainian poetry</h3>
     </header>
-    
-    <nav>
-        
-    </nav>
     
     <article>
         <p>If you tried to find dark undertones and life downsides in poetry, 
@@ -39,8 +42,10 @@
     <img src="img/hotyn.jpg">
     
     <article>
-        <h3>Poem for today</h3>
-        <button type="proceed">Proceed for more</button>
+        <h3>Introductive poem</h3>
+        <form method="get" action="poetry.html">
+            <button type="proceed">Proceed for more</button>
+        </form>
         <br>
         <section>
             <p>Якщо чесно, я часто не спав, бо боявся, що хтось мені стиха промовить:</p>
@@ -66,6 +71,42 @@
             <p>Страхами.</p>
         </section>
     </article>
+    
+    <article>
+        <h3>Listen to:</h3>
+        <audio controls>
+            <source src="audio/winter.mp3" type="audio/mp3">
+        </audio>
+    </article>
+    
+    <article>
+        <h3>Where you can find me:</h3>
+        <a href="https://www.facebook.com/stmt.h.lv17"><img src="img/fb.png"></a>
+        <br>
+        <a href="https://www.instagram.com/antique_stmt_h/"><img src="img/ig.png"></a>
+        <br>
+        <a href="https://web.telegram.org/#/im?p=@STMT_H"><img src="img/tg.jpg"></a>
+    </article>
+    
+    <article>
+        <h3>Leave a comment, please :)</h3>
+        <form method="post" action="mailto:yurijlishchuk@gmail.com">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user-name"/>
+            <br>
+            <label for="e-mail">E-mail:</label>
+            <input type="text" id="e-mail" name="user-e-mail"/>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="user-message"></textarea>
+            <br>
+            <button type="submit">Comment</button>
+        </form>
+    </article>
+    
+    <footer>
+        <h2>© 2018 Yurij Lishchuk</h2>
+    </footer>
     
 </body>
 </html>
